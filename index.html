@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rolli - Encontre tudo aqui</title>
+  <style>
+    body {
+      background: #ffc233;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Mascote de fundo */
+    .bg-mascote {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 480px;
+      max-width: 92vw;
+      opacity: 0.14;
+      z-index: 0;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .logo {
+      width: 130px;
+      margin-top: 38px;
+      margin-bottom: 12px;
+      z-index: 1;
+    }
+    h1 {
+      color: #491952;
+      font-size: 2em;
+      margin: 0 0 8px 0;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      color: #6b357b;
+      font-size: 1.13em;
+      margin-bottom: 22px;
+    }
+    .links {
+      width: 94%;
+      max-width: 380px;
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+      margin-bottom: 32px;
+    }
+    .link-btn {
+      background: #491952;
+      color: #ffc233;
+      border: none;
+      border-radius: 29px;
+      padding: 17px 0;
+      font-size: 1.13em;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s, transform 0.12s;
+      box-shadow: 0 2px 8px rgba(73, 25, 82, 0.12);
+      display: block;
+    }
+    .link-btn:hover {
+      background: #ffc233;
+      color: #491952;
+      border: 2px solid #491952;
+      transform: scale(1.04);
+    }
+    .socials {
+      margin: 22px 0 36px 0;
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+    }
+    .social-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #ffc233;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.18s, box-shadow 0.18s;
+      box-shadow: 0 2px 8px rgba(73, 25, 82, 0.08);
+      border: 2.5px solid #491952;
+    }
+    .social-icon img {
+      width: 22px;
+      height: 22px;
+      display: block;
+      filter: drop-shadow(0 0 1px #491952);
+    }
+    .social-icon:hover {
+      background: #491952;
+      /* invertendo as cores do svg no hover */
+    }
+    .social-icon:hover img {
+      filter: brightness(0) invert(1);
+    }
+    @media (max-width: 600px) {
+      .logo { width: 92px; }
+      h1 { font-size: 1.19em; }
+      .links { max-width: 99%; }
+      .bg-mascote { width: 320px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Mascote marca d'água no fundo -->
+  <img class="bg-mascote" src="mascote-rolli.png" alt="Mascote Rolli">
+
+  <div class="container">
+    <!-- LOGO -->
+    <img class="logo" src="logo-rolli.png" alt="Logo Rolli">
+    <h1>Rolli Loja Oficial</h1>
+    <div class="subtitle">Tudo em eletrônicos, moda, acessórios e mais!</div>
+    <div class="links">
+      <a class="link-btn" href="https://wa.me/SEU_NUMERO" target="_blank">💬 Atendimento WhatsApp</a>
+      <a class="link-btn" href="https://www.instagram.com/SUAINSTA" target="_blank">📸 Siga no Instagram</a>
+      <a class="link-btn" href="https://www.facebook.com/SEUFACEBOOK" target="_blank">👍 Curta no Facebook</a>
+      <a class="link-btn" href="https://rollishop.com.br" target="_blank">🛒 Comprar Online</a>
+      <a class="link-btn" href="https://rollishop.com.br/promocoes" target="_blank">🔥 Ofertas Especiais</a>
+      <a class="link-btn" href="https://rollishop.com.br/catalogo" target="_blank">👓 Catálogo Completo</a>
+    </div>
+    <div class="socials">
+      <a class="social-icon" href="https://wa.me/SEU_NUMERO" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+      </a>
+      <a class="social-icon" href="https://instagram.com/SUAINSTA" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+      </a>
+      <a class="social-icon" href="https://facebook.com/SEUFACEBOOK" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+      </a>
+    </div>
+  </div>
+</body>
+</html>
+
